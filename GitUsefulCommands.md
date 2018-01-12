@@ -25,3 +25,23 @@ git diff old_commit new_commit
 ```
 git apply -v file.diff
 ```
+
+## Pull request
+Сначала добавляем репозиторий в список remote репозиториев:
+```
+git remote add [name] [URL]
+```
+После чего отправляем запрос
+```
+git push [name] [branch]
+```
+
+## Разрешение конфликтов
+### Переименовывание файла
+Для устранения конфликта с переименованным файлом необходимо исправить связанные с ним файлы, удалить старый, добавить новый и модифицированные.
+```
+git rm old_name
+git add new_name
+git add mod_files
+git rebase --continue
+```
