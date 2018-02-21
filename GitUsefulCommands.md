@@ -36,6 +36,16 @@ git diff old_commit new_commit
 git apply -v file.diff
 ```
 
+## Удалённый сервер
+### Список удалённых серверов
+```
+git remote
+```
+### Добавление нового сервера в список
+```
+git remote add [NAME_REMOTE] [URL]
+```
+
 ## Pull request
 Сначала добавляем репозиторий в список remote репозиториев:
 ```
