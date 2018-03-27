@@ -37,10 +37,12 @@ git diff old_commit new_commit
 git apply -v file.diff
 ```
 ### Модификация патчей
-С помощью __git format-patch__ подготавливаем набор всех коммитов для текущей ветки, на которые она отличается от базовой. С помощью __sed__ модифицируем патчи, потом применяем их.
+С помощью __git format-patch__ подготавливаем набор всех коммитов для текущей ветки, на которые она отличается от базовой. С помощью __sed__ модифицируем патчи. __Git am__ применяет патчи вместе с коммитами.
 ```
 git format-patch [BASE_BRANCH_NAME] -o [OUTPUT_DIRECTORY]
 find . -name "*.patch" -exec sed -i '' -e 's/OLD_TEMPLATE/NEW_TEMPLATE/g' {} \;
+git reset --hard [BASE_BRANCH_NAME]
+git am *.patch
 ```
 
 ## Удалённый репозиторий
