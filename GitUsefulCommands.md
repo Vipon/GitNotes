@@ -50,6 +50,14 @@ git am *.patch
 ```
 git remote
 ```
+
+
+### Получение URL удалённых репозиториев
+```
+git remote -v
+``` 
+
+
 ### Добавление нового репозитория в список
 ```
 git remote add [NAME_REMOTE] [URL]
