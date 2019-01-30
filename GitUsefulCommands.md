@@ -26,6 +26,13 @@ git commit --amend
 git add (files)
 git commit --amend --no-edit
 ```
+Изменение конкретного (непоследнего) commit message.
+```
+git rebase --interactive [NUM_VERSION]
+// Change pick -> edit
+git commit --amend
+git rebase --continue
+```
 
 ### Объединение нескольких коммитов
 !!! перед любыми подобными действиями лучше делать BACKUP
