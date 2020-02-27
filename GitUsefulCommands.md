@@ -15,6 +15,11 @@ git branch -m OLD_NAME NEW_NAME
 git commit --amend
 ```
 
+### Если сделали коммит и хотим поменять автора
+```
+git commit --amend --author="AUTHOR_NAME <email@address.com>"
+```
+
 ### Если сделали коммит и хотим добавить файл, или внести изменения в добавленные файлы
 С изменением commit message.
 ```
