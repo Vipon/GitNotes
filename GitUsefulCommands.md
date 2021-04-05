@@ -4,12 +4,16 @@
 ```
 git branch -d BRANCH_NAME
 ```
+### Удаление branch на remote server
+```
+git push origin --delete BRANCH_NAME
+```
 ### Переименование branch
 ```
 git branch -m OLD_NAME NEW_NAME
 ```
 
-## Модификация коммитов 
+## Модификация коммитов
 ### Если сделали коммит и хотим изменить commit message
 ```
 git commit --amend
@@ -107,7 +111,7 @@ git remote
 ### Получение URL удалённых репозиториев
 ```
 git remote -v
-``` 
+```
 
 
 ### Добавление нового репозитория в список
