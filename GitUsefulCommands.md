@@ -149,5 +149,9 @@ git rebase --continue
 
 ## Удаление файлов из истории
 ```
-git filter-repo --invert-paths --path [PATH_TO_DIR]
+git filter-repo --invert-paths --path [PATH_TO_DIRECTORY]
+git remote add origin [ORIGIN_URL]
+git push origin --force --all
+git push origin --force --tags
 ```
+
