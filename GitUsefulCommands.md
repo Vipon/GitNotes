@@ -85,6 +85,10 @@ git diff
 ```
 git diff old_commit new_commit
 ```
+### Показать только названия измененных файлов
+```
+git diff --name-only old_commit new_commit
+```
 
 ## Patch
 ### Применение патчей
@@ -141,4 +145,9 @@ git rm old_name
 git add new_name
 git add mod_files
 git rebase --continue
+```
+
+## Удаление файлов из истории
+```
+git filter-repo --invert-paths --path [PATH_TO_DIR]
 ```
